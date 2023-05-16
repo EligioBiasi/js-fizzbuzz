@@ -5,18 +5,14 @@ Consegna:
 // Come faccio a sapere se un numero è divisibile per un altro?
 // Abbiamo visto qualcosa di particolare che possiamo usare?
 
-console.log('gino');
-const Fizz = 'Fizz';
-const Buzz = 'Buzz';
-for (let index = 1; index <= 101; index++){
-    console.log(index);
-    if (index % 3 === 0){
-        console.log('Fizz');
+for (let index = 1; index < 101; index++){
+    if ((index % 3 === 0) && (index % 5 === 0)) {
+        console.log('BuzzFizz');
     } else if (index % 5 === 0){
         console.log('Buzz');
-    } else if ((index % 3 === 0) && (index % 5 === 0)){
-        console.log('BuzzFizz');
+    } else if (index % 3 === 0){
+        console.log('Fizz')
+    } else{
+        console.log(index)
     }
 }
-    
-console.log('gina');
