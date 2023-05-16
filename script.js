@@ -6,12 +6,14 @@ Consegna:
 // Abbiamo visto qualcosa di particolare che possiamo usare?
 
 for (let index = 0; index <= 100; index++){
-    if(index / 3 === 0){
+    if(index % 3 === 0){
         index = 'Fizz'
-    } else if (index / 5 === 0){
+    } else if (index % 5 === 0){
         index = 'Buzz'
-    } else if ((index / 3 === 0) || (index / 5 === 0)){
+    } else if ((index % 3 === 0) && (index / 5 === 0)){
         index = 'FizzBuzz'
+    } else {
+        index = 1
     }
     console.log(index)
 }
